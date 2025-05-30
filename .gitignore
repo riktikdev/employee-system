@@ -1,0 +1,39 @@
+# Misc
+.DS_Store
+*.pem
+
+# IDEs and editors
+.c9/
+.classpath
+/.idea
+*.launch
+.project
+.settings/
+*.sublime-workspace
+
+# VSCode
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
+.vscode/*
+
+# Env files
+.env
+.env.development.local
+.env.local
+.env.production.local
+.env.test.local
+
+# Runtime data
+*.pid
+*.pid.lock
+pids
+*.seed
+
+# Temp directory
+.temp
+.tmp
+
+# Docker
+/data
