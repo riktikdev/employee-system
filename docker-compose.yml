@@ -27,12 +27,6 @@ services:
       - 6379:6379
     volumes:
       - ./data/keydb:/data
-    environment:
-      KEYDB_USER: ${KEYDB_USER}
-      KEYDB_PASSWORD: ${KEYDB_PASSWORD}
-    env_file:
-      - .env
-    command: ["keydb-server", "--requirepass", "${KEYDB_PASSWORD}", "--user", "${KEYDB_USER}"]
     healthcheck:
       test: [CMD, keydb-cli, -a, password, ping]
       interval: 10s
